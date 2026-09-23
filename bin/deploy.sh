@@ -89,20 +89,20 @@ DEPLOY_DOCROOT="${DEPLOY_DOCROOT-public}"
 DEPLOY_ENSURE_DIRS="${DEPLOY_ENSURE_DIRS-data}"
 
 EXCLUDE_ARGS=(
-  --exclude-glob .git/
-  --exclude-glob .gitignore
-  --exclude-glob .env
-  --exclude-glob .env.*
-  --exclude-glob .cursor/
-  --exclude-glob data/
+  --exclude-glob '.git/'
+  --exclude-glob '.gitignore'
+  --exclude-glob '.env'
+  --exclude-glob '.env.*'
+  --exclude-glob '.cursor/'
+  --exclude-glob 'data/'
   --exclude-glob '*.sqlite'
   --exclude-glob '*.sqlite-*'
-  --exclude-glob .DS_Store
-  --exclude-glob node_modules/
-  --exclude-glob vendor/
-  --exclude-glob .env.deploy
-  --exclude-glob .env.deploy.example
-  --exclude-glob scripts/deploy.sh
+  --exclude-glob '.DS_Store'
+  --exclude-glob 'node_modules/'
+  --exclude-glob 'vendor/'
+  --exclude-glob '.env.deploy'
+  --exclude-glob '.env.deploy.example'
+  --exclude-glob 'scripts/deploy.sh'
 )
 
 # shellcheck disable=SC2206
